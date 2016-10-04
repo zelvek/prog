@@ -1,0 +1,28 @@
+/*
+-[[Copyright zelvek - Script developed ]]--
+--[[You are all allowed to use it as long as you don't pretend it's yours]]--
+--[[Have fun !]]--
+version =" 1.0"
+--[[
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(int argc, char **argv)
+{
+ 
+system("color a");
+    double mr, m0, v;
+    double c = 3e8;
+ 
+    printf("valeur de la masse du corp au repos (kg) : ");
+    scanf("%lf",&m0);
+    printf("vitesse du corp ( m/s) :");
+    scanf("%le",&v);
+ 
+    mr = (m0) / (sqrt(1-(pow(v,2)/(pow(c,2)))));
+ 
+    printf(" mr = %lf", mr );
+ 
+    return 0;
+}
