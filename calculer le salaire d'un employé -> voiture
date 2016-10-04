@@ -1,0 +1,42 @@
+/*
+-[[Copyright zelvek - Script developed ]]--
+--[[You are all allowed to use it as long as you don't pretend it's yours]]--
+--[[Have fun !]]--
+version =" 1.0"
+--[[
+*/
+ 
+ 
+#include <stdio.h>
+#include <stdlib.h>
+ 
+ 
+int main()
+{
+    system("color a");
+    int carSold = 0;
+    int totalSales = 0;
+    double pay = 0;                    // initialisation variables
+ 
+ 
+ 
+    printf("Calcul du salaire des commerciaux de la concession : \n");
+    printf("\nEntrez le nombre de voitures vendues par le vendeur : ");
+    scanf("%d", &carSold);                        //entrée des données NOMBRE DE VOITURES VENDUES et CA mensuel par l utilisateur
+    printf("\nEntrez le chiffre d'affaire mensuel du vendeur en euros : ");
+    scanf("%d", &totalSales);
+ 
+    pay = 1400 + 150*carSold + ((double)totalSales/100)*5;              //calcul salaire
+ 
+    printf("\nSalaire total : %lf %", pay);         //affichage salaire
+ 
+    printf("\nPourcentage part fixe : %lf /100", 1400 /(pay/100));    //pourcentage part fixe
+ 
+    printf("\nPourcentage prime par vehicule : %lf", (150*carSold) / (pay/100)); //pourcentage nbr de vehicules vendus
+ 
+    printf("\nPourcentage prime chiffre d'affaire : %lf /100", ((double)totalSales/100)*5 / (pay/100)); //pourcentage prime CA
+ 
+ 
+ 
+    return 0;
+}
