@@ -1,0 +1,57 @@
+/*
+-[[Copyright zelvek - Script developed ]]--
+--[[You are all allowed to use it as long as you don't pretend it's yours]]--
+--[[Have fun !]]--
+version =" 1.0"
+--[[
+*/
+ 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+ 
+int main(int argc,char **argv)
+/*Description:
+ *
+ */
+ 
+{
+system("color A");
+ 
+    double longb, hautb, longm, hautm, surfaceb, surfacem, n, n16, n8, n7, n6, n1;
+ 
+    s
+ 
+    //Brique
+    printf("Entrer la longueur des briques en cm:\n");
+    scanf("%lf", &longb);
+    printf("Entrer la hauteur des briques en cm: \n");
+    scanf("%lf", &hautb);
+ 
+    //Mur
+    printf("length of the wall:\n");
+    scanf("%lf", &longm);
+    printf("Entrer la hauteur du mur en cm: \n");
+    scanf("%lf", &hautm);
+ 
+    //Calculs
+    surfaceb = longb*hautb;
+    surfacem = longm*hautm;
+    n = surfacem/surfaceb;
+ 
+    n1 = n;
+    n1 = n1<=7 && n1>0;
+    n16 = n/16;
+    n8 = n16 - (int)n16;
+    n7 = n8<=0.5&&n8>0;
+    n16 = n16 + !n1;
+ 
+    printf("%lf", n7);
+ 
+    printf("Nunber of bricks needed: %d\n",130,(int)n);
+    printf("Number of 16 packs needed: %d\n",130,(int)n16);
+    printf("Number of 8 packs needed: %d\n",130, (int)n7);
+ 
+ 
+    return 0;
+}
