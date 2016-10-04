@@ -1,0 +1,40 @@
+/*
+-[[Copyright zelvek - Script developed ]]--
+--[[You are all allowed to use it as long as you don't pretend it's yours]]--
+--[[Have fun !]]--
+version =" 1.0"
+--[[
+*/
+ 
+ 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(int argc, char **argv)
+{
+ 
+ 
+ 
+ 
+    int aammjj,annee, mois, jour, jourtemp, moistemp;
+ 
+    printf("enter the date ( AAMMJJ): ");
+    scanf("%d",&aammjj);
+ 
+    annee = aammjj/10000;
+ 
+    jourtemp = aammjj / 100;
+jourtemp *= 100;
+jour = aammjj - jourtemp;
+ 
+ 
+mois = aammjj / 100 - annee*100;
+ 
+    printf("DD :%d MM: %d YYYY:20%d",jour, mois, annee);
+ 
+ 
+ 
+ 
+ 
+    return 0;
+}
