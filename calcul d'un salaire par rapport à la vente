@@ -1,0 +1,50 @@
+/*
+-[[Copyright zelvek - Script developed ]]--
+--[[You are all allowed to use it as long as you don't pretend it's yours]]--
+--[[Have fun !]]--
+version =" 1.0"
+--[[
+*/
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main(int argc,char **argv)
+/*Description:
+ 
+ */
+ 
+{
+system("color A");
+    int n, salaire;
+ 
+    printf("nombre de voiture(s) vendue(s)? \n");
+    scanf("%d", &n);
+ 
+    if (n<5)
+        {
+        salaire = 1000;
+ 
+    }
+    if (n<10)
+        {
+       salaire=1500;
+ 
+    }
+    if (n<15)
+        {
+        salaire=2300;
+ 
+    }
+    if (n<25)
+        {
+       salaire=2500;
+ 
+    }
+    else
+    {
+        salaire=7000;
+    }
+    printf("le salaire est de : %d", salaire);
+ 
+ 
+}
